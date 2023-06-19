@@ -1,0 +1,63 @@
+.seccion_carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 8px;
+    margin: 10px;
+    gap: 15px;
+}
+
+.seccion_carrito span{
+    font-size: 20px;
+}
+
+.listaProductosCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.listaProductosCarrito li{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.listaProductosCarrito li img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.c_title_logo{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.c_productos_mensaje{
+    background-color: #fff;
+    padding: 10px;
+}
+
+.s_calculo_btnpago{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.s_calculo_btnpago button{
+    width: 10%;
+    background-color: rgb(236, 227, 45);
+    border: none;
+    border-radius: 7px;
+    padding: 4px;
+    color: black;
+}
+
+@media (max-width: 700px) {
+    .s_calculo_btnpago button{
+        width: 100%;
+    }
+}

@@ -1,0 +1,129 @@
+a{
+  text-decoration: none;
+}
+/* menu y logo */
+.header{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    background-color: #232F3E;
+    padding: 8px;
+}
+
+.header nav{
+   width:100% ;
+   display: flex;
+   justify-content: space-around;
+   padding: 1px;
+}
+
+.capa_logo_and_buscador{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.capa_logo_and_buscador input {
+   width:  80%;
+   height: 40px;
+   border: none;
+   border-radius: 4px;
+   outline: 1px solid rgba(0, 0, 0, 0.115);
+   padding: 4px;
+}
+
+.capa_logo_and_buscador img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* botones */
+.capa_micuenta_and_micarrito{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 7px;
+}
+
+.btn-cuenta{
+  width: 110px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #232F3E;
+}
+
+.btn-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 8px;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    background-color: #232F3E;
+}
+.btn-carrito:hover{
+    background-color: #a59c9c3a;
+}
+
+.btn-cuenta:hover{
+    background-color: #a59c9c3a;
+}
+
+
+/* menu lateral */
+.icon_opened{
+   display: none;
+}
+
+.list_items{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px .3px rgba(43, 42, 42, 0.219);
+}
+
+/* estilos alerta al existir un producto  en el carrito */
+.alertProduct{
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #ded013;
+
+}
+
+/* Estilos pantalla movil */
+@media (max-width: 700px) {
+
+    .icon_opened{
+        display: block;
+        width: 40px;
+    }
+
+   .capa_micuenta_and_micarrito{
+     display: none;
+   }
+
+   .capa_logo_and_buscador{
+     width: 90%;
+   }
+
+   .capa_logo_and_buscador input{
+     width: 100%;
+   }
+}

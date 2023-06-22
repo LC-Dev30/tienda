@@ -1,14 +1,15 @@
 import React from 'react'
 import {RouterProvider,createBrowserRouter} from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import {App} from './App'
 import { SeccionArticulo } from './components/SeccionArticulo.jsx'
 import { Carrito } from './components/Carrito.jsx'
 
 const rutas = createBrowserRouter([
   {
-    path:'/',
-    element: <App/>
+    path:'/tienda/',
+    element: <App/> ,
+    errorElement: <h3>Error en el sistema</h3>
   },
   {
    path:'/art/:idArticulo',

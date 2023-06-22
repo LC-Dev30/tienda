@@ -4,7 +4,7 @@ import { Navbar } from "./components/Navbar"
 import { Productos } from "./components/Productos"
 import './css/app.css'
 
-function App() {
+export function App() {
   return (
   <div id="app">
      <Navbar/>
@@ -15,4 +15,3 @@ function App() {
   )
 }
 
-export default App

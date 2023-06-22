@@ -1,16 +1,15 @@
 {
   "name": "app_tienda",
-  "homepage": "https://LC-Dev30.github.io/tienda",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "dev": "vite",
   "scripts": {
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "build": "vite build",
+    "build": "vite build",  
+    "dev": "vite",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.0",
